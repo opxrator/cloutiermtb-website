@@ -18,32 +18,32 @@ class App {
         ));
     }
 
-}
-}
-namespace SiteEditor\Exception {
-class AppException extends \Exception {
+//}
+//}
+//namespace SiteEditor\Exception {
+//class AppException extends \Exception {
 
-    protected $type;
+//    protected $type;
 
-    function __construct($message = '', $type = 'ApplicationError', $options = array()) {
-        $code = 400;
-        if (isset($options['statusCode']) && is_int($options['statusCode'])) {
-            $code = $options['statusCode'];
-        }
-        parent::__construct($message, $code);
-        $this->type = $type;
-    }
+//    function __construct($message = '', $type = 'ApplicationError', $options = array()) {
+//        $code = 400;
+//        if (isset($options['statusCode']) && is_int($options['statusCode'])) {
+ //           $code = $options['statusCode'];
+ //       }
+ //       parent::__construct($message, $code);
+///$this->type = $type;
+ //   }
 
-    function getType() {
-        return $this->type;
-    }
+  //  function getType() {
+//return $this->type;
+//    }
 
-    function getHttpStatusCode() {
-        return $this->getCode();
-    }
-
-}
-}
+//    function getHttpStatusCode() {
+//        return $this->getCode();
+//    }
+//
+//}
+//}
 namespace SiteEditor\Utils {
 class Converter {
 
